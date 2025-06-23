@@ -85,18 +85,18 @@ img {
 }
 
 .showcase .grid {
-  grid-template-columns: 55% 45%;
+  /* grid-template-columns: 55% 45%; */
   gap: 30px;
   overflow: visible;
 }
 
-.showcase-form {
+.showcase-form{
   position: relative;
   top: 60px;
   height: 350px;
   width: 400px;
   z-index: 100;
-  justify-self:flex-end;
+  justify-self: flex-end;
 }
 
 .showcase-form .form-control {
@@ -214,4 +214,48 @@ img {
   margin: 0px 10px;
 }
 
+/* Tablets & Under */
+@media (max-width: 768px) {
+  .grid, 
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .cloud p {
+    margin: 30px auto;
+  }
+}
