@@ -204,6 +204,31 @@ img {
   height: 80px;
 }
 
+/* Features Page */
+.features-head img {
+  width: 200px;
+  justify-self: end;
+}
+
+.features-sub-head img {
+  width: 300px;
+  justify-self: end;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
+.features-main .grid {
+  padding: 30px;
+}
+
+.features-main .grid > :nth-child(1) {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.features-main .grid > :nth-child(2) {
+  grid-area: 2 / 1 / 3 / 3;
+}
 
 /* Footer */
 .footer a {
