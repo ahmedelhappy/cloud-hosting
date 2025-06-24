@@ -289,6 +289,14 @@ img {
   margin: 0px 10px;
 }
 
+.footer a :hover {
+  transform: scale(1.2);
+}
+
+.footer nav a:hover {
+  color: #ffffffb1;
+}
+
 /* Tablets & Under */
 @media (max-width: 768px) {
   .grid, 
